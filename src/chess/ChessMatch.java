@@ -5,7 +5,7 @@ import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Rook;
 
-public class ChessMatch {//classe onde terá as regras
+public class ChessMatch {//classe onde terá as regras do jogo
     private Board board;
 
     public ChessMatch(){
