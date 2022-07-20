@@ -14,7 +14,8 @@ public class ChessPosition {
         this.row = row;
     }
 
-    public char getColumn() {
+    public char getColumn()
+    {
         return column;
     }
 
