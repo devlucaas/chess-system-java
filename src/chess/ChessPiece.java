@@ -3,7 +3,7 @@ import boardgame.Board;
 import boardgame.Piece;
 import boardgame.Position;
 
-public class ChessPiece extends Piece {//subclasse de piece
+public abstract class ChessPiece extends Piece {//subclasse de piece
     private  Color color;
 
     public ChessPiece(Board board, Color color) {
