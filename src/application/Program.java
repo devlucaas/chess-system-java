@@ -16,7 +16,7 @@ public class Program {
         List<ChessPiece> captured = new ArrayList<>();
 
 
-        while (true){
+        while (true/*!chessMatch.getCheckMate()*/){
             try{
                 UI.clearScreen();
                 UI.printMatch(chessMatch, captured);//esse metodo vai receber a matriz de peças da partida;
@@ -45,7 +45,8 @@ public class Program {
                 System.out.println(e.getMessage());
                 sc.nextLine();
             }
-
         }
+        //UI.clearScreen();
+        //UI.printMatch(chessMatch, captured);
     }
 }
