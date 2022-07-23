@@ -1,19 +1,21 @@
 package boardgame;
 
 public abstract class Piece {
+
     protected Position position;
     private Board board;
 
     public Piece(Board board) {
         this.board = board;
-        position = null; //a posicao de uma peça recem criada começa como nula, pra informar que nao foi colocada ainda
+        position = null;
     }
 
-    protected Board getBoard() { //somente classes do mesmo pacote poderão alterar
+    protected Board getBoard() {
         return board;
-    }//nao foi colocado o set porque nao quero que haja modificacao do tabuleiro
+    }
 
     public abstract boolean[][] possibleMoves();
+
     public boolean possibleMove(Position position) {
         return possibleMoves()[position.getRow()][position.getColumn()];
     }
@@ -30,4 +32,3 @@ public abstract class Piece {
         return false;
     }
 }
-
